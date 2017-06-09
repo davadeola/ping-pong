@@ -12,6 +12,7 @@
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 
 
 
@@ -24,23 +25,64 @@
   <![endif]-->
 </head>
 <body>
-	<div>
-		<form id="blanks">
-		<div class="form-group">
-				<label>Enter a number</label>
-				<input type="text" name="" placeholder="Enter a number" id="num">
-			</div>
-			
-			<button class="btn btn-danger btn-lg" id="clear">Clear</button>
-		</form>
-	</div>
-	<div>
-		<div>
-			<ul>
-				<li class="item"></li>
-			</ul>
+	<!--The Header-->
+	<div id=header>
+		<div class="col-md-12 col-xs-12 col-sm-12" >
+			<h1 class="animated bounce shake"><b>This is Ping Pong!</b></h1>
 		</div>
 	</div>
+	<div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+		<div class="about">
+			<h3>About Ping Pong</h3>
+			<h4>Created by</h4>
+			<p>David Adeola</p>
+
+			<h4>Github Username Url</h4>
+			<a href="https://davadeola.github.io/">My portfolio</a>
+
+			<h4>Level Test for</h4>
+			<p>Java</p>
+</div>
+		</div>
+	</div>
+	<div >
+		<div class="col-md-8 col-sm-6 col-xs-12">
+			<div class="play">
+				<div>
+					<h2 class="animated fadeInUpBig">Let's Play</h2>
+					<h3>Rules</h3>
+					<p>Ping pong will count to your number from 1 with the following exceptions</p>
+					<ul>
+						<li>Numbers divisible by 3 are replaced with "ping"</li>
+						<li>Numbers divisible by 5 are replaced with "pong"</li>
+						<li>Numbers divisible by 15 are replaced with "pingpong"</li>
+					</ul>
+				</div>
+				<!--The Form-->
+				<div>
+					<form id="blanks">
+						<div class="form-group">
+							<label>Enter a number</label>
+							<input type="text" name="" placeholder="Enter a number" id="num">
+							<button><input type="submit" name="Ping-pong" ></button>
+						</div>
+
+						
+					</form>
+				</div>
+<button class="btn btn-danger " id="clear">Clear</button>
+				<div>
+					<div class="display">
+						<pre class="display"></pre>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
 
 
 

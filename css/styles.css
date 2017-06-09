@@ -1,28 +1,57 @@
-.pic-showing {
-  display: none;
+html , body{
+	margin: 0;
+	padding: 0;
+	
 }
 
-.clickable {
-  cursor: pointer;
-  color: #0088cc;
+#header{
+	margin-top: 0;
+	padding-top: 0;
+	background-image: url(../img.jpg);
+	height: 50%;
+	height: 400px;
+	opacity: 0.8;
+	width: 100%;
+	background-color: green;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.clickable:hover {
-  text-decoration: underline;
+#header h1{
+	color: blue;
+	text-align: center;
+	padding-top: 10%;
+	font-size: 80px;
 }
 
-.green-background {
-  background-color: green;
+h4,  h3{
+	color: green;
 }
 
-.yellow-background {
-  background-color: yellow;
+.about{
+	
+	background-color: yellow;
+	height: 50%;
+	text-align: center;
+	padding-top: 5%;
+
+}
+.about p a{
+	color: white;
+	text-decoration: inherit;
+	
+	
 }
 
-.red-background {
-  background-color: red;
+.play{
+	
+	padding-bottom: 40%;
+
 }
 
-#story {
-  display: none;
+pre{
+	margin-right: 5%;
+	margin-left: 5%;
+
 }

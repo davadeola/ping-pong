@@ -25,7 +25,14 @@ var myNumbersArray = [];
 
 
   }
-  $("li.item").append(myNumbersArray + "<br");
+
+var elem = document.getElementsByTagName("pre")[0];
+myNumbersArray.forEach(function(el, i) {
+  elem.appendChild(
+    document.createTextNode(el + "\n")
+  )
+})
+  //$("li.item").append(myNumbersArray + "<br");
 }
 
 
@@ -42,6 +49,9 @@ var myNumbersArray = [];
 
 $(document).ready(function(){
 
+  $("#clear").click(function(){
+  $("pre").text("");
+});
   
   $("form#blanks").submit(function(event) {
 
@@ -51,7 +61,7 @@ $(document).ready(function(){
     pingPong(num);    
   });
 
-  
+
 
 
 });
